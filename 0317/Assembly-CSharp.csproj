@@ -53,13 +53,14 @@
     <UnityVersion>2020.3.30f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Scripts\LJE_PlayerMove.cs" />
     <Compile Include="Assets\Scenes\Scripts\KSOEnemy.cs" />
     <Compile Include="Assets\Scenes\Scripts\Bullet.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\LayoutSystem\PuzzlePieceBox.cs" />
+    <Compile Include="Assets\Scenes\Scripts\LJE_TreeRotation.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\SceneSystems\TargetTrigger.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\SceneSystems\SceneMenuIcon.cs" />
     <Compile Include="Assets\Scenes\Scripts\collision.cs" />
@@ -98,7 +99,9 @@
     <Compile Include="Assets\Scenes\Scripts\Flame1State.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Audio\MarbleAudio.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_Spiral.cs" />
-    <Compile Include="Assets\Scenes\Scripts\LJE_TreeRotation.cs" />
+    <Compile Include="Assets\Rain.cs" />
+    <Compile Include="Assets\KSOOnParticleCollision.cs" />
+    <Compile Include="Assets\KSORandomSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
