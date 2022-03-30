@@ -6,7 +6,7 @@ public class KSORandomSpawn : MonoBehaviour
 {
 
     float currentTime;
-    public GameObject rain;
+    public GameObject rainFactory;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class KSORandomSpawn : MonoBehaviour
 
         if (currentTime > 10)
         {
-            GameObject.Instantiate(rain, RandomPos, Quaternion.identity);
+            Instantiate(rainFactory, RandomPos, Quaternion.identity);
             currentTime = 0;
             
         }
