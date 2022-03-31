@@ -10,6 +10,8 @@ public class LJE_PlayerMove : MonoBehaviour
     public bool isGrounded = false;
     public int jumpCount = 2;
 
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,12 +39,16 @@ public class LJE_PlayerMove : MonoBehaviour
                 {
                     rb.AddForce(Vector3.up * jumpAmount, ForceMode.Impulse);
                     jumpCount--; // 점프할 때마다 점프 횟수 감소
+                    anim.SetTrigger("JUMP");
                 }
             }
         }
 
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+
+        anim.SetFloat("h", h);
+        anim.SetFloat("v", v);
 
         dir = new Vector3(h, 0, v);
 

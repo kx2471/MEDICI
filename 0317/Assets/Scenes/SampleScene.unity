@@ -139,7 +139,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: c6d9a028ebe16254c8ea7a4bdb872a72, type: 2}
+      objectReference: {fileID: 9100000, guid: 715b88e86f02bbb45bb4906f02306cd5, type: 2}
+    - target: {fileID: 3394258902966647432, guid: 9ec5a65d3f2c21e45be9e7af8d0662fc,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4724513214603991026, guid: 9ec5a65d3f2c21e45be9e7af8d0662fc,
         type: 3}
       propertyPath: m_RootOrder
@@ -205,6 +210,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Princess
       objectReference: {fileID: 0}
+    - target: {fileID: 8678796801171497065, guid: 9ec5a65d3f2c21e45be9e7af8d0662fc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96140105
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678796801171497065, guid: 9ec5a65d3f2c21e45be9e7af8d0662fc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.12943909
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec5a65d3f2c21e45be9e7af8d0662fc, type: 3}
 --- !u!1001 &57356811
@@ -237,7 +252,7 @@ PrefabInstance:
     - target: {fileID: 4846026027237313268, guid: 8be54865e1132424cb6dc7f99aadcafe,
         type: 3}
       propertyPath: m_Name
-      value: Umbrella 1 Variant
+      value: Umbrella
       objectReference: {fileID: 0}
     - target: {fileID: 4846026027237313268, guid: 8be54865e1132424cb6dc7f99aadcafe,
         type: 3}
@@ -1156,6 +1171,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5299104761661102034, guid: 75c42289c3f116b449ebf45a3e748950,
     type: 3}
   m_PrefabInstance: {fileID: 1678049264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &402616045 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3394258902966647432, guid: 9ec5a65d3f2c21e45be9e7af8d0662fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 12126496}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &443336343 stripped
 GameObject:
@@ -4631,6 +4652,7 @@ MonoBehaviour:
   jumpAmount: 7
   isGrounded: 1
   jumpCount: 2
+  anim: {fileID: 402616045}
 --- !u!114 &1126351868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4647,6 +4669,8 @@ MonoBehaviour:
     type: 3}
   ThrowPosition: {fileID: 1243450951}
   ThrowPower: 15
+  canFire: 1
+  anim: {fileID: 402616045}
 --- !u!54 &1126351869
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5483,7 +5507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243450950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.222, y: -1.32, z: 0.757}
+  m_LocalPosition: {x: 0.55, y: 0.12, z: 0.757}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1126351866}
