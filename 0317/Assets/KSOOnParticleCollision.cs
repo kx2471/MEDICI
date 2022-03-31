@@ -18,5 +18,10 @@ public class KSOOnParticleCollision : MonoBehaviour
     }
 
 
+    void Update()
+    {
+        Destroy(gameObject, 10f);
+    }
+
 }
 

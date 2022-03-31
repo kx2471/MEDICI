@@ -6,27 +6,46 @@ public class KSORandomSpawn : MonoBehaviour
 {
 
     float currentTime;
+    float createTime;
+    public float max = 250;
+    public float min = 100;
+    
+    
+
     public GameObject rainFactory;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        RandomTime();
+        currentTime = min;
 
+    }
     // Update is called once per frame
     void Update()
     {
-        currentTime = Time.deltaTime;
-        float newX = Random.Range(-56.7f, 65f), newY = Random.Range(58.6f, 58.7f), newZ = Random.Range(12f, 112f);
+        currentTime += Time.deltaTime;
 
-        Vector3 RandomPos = new Vector3(newX, newY, newZ);
-
-
-        if (currentTime > 10)
+        if (currentTime > createTime)
         {
-            Instantiate(rainFactory, RandomPos, Quaternion.identity);
-            currentTime = 0;
-            
+            SpawnObject();
+            RandomTime();
+            print(createTime);
         }
+
+        
+
+
     }
+    void SpawnObject()
+    {
+        currentTime = 0;
+        Instantiate(rainFactory, transform.position, rainFactory.transform.rotation);
+    }
+
+    void RandomTime()
+    {
+        createTime = Random.Range(min, max);
+    }
+
+
 }
