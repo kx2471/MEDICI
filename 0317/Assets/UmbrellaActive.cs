@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UmbrellaActive : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class UmbrellaActive : MonoBehaviour
 
     public GameObject Umbrella;
     public int umbCount;
-
+    public Text umbText;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,7 @@ public class UmbrellaActive : MonoBehaviour
                 }            
             }
         }
+        umbText.text = "X" + umbCount;
 
     }
 }

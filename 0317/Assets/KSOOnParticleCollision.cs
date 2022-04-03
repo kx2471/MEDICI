@@ -8,7 +8,8 @@ public class KSOOnParticleCollision : MonoBehaviour
     {
 
 
-        
+
+
         Transform tr = other.transform.Find("Fire");
         if (tr)
         {
@@ -22,6 +23,4 @@ public class KSOOnParticleCollision : MonoBehaviour
     {
         Destroy(gameObject, 10f);
     }
-
 }
-

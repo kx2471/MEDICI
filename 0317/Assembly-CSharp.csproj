@@ -67,6 +67,7 @@
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\SceneSystems\SceneMenuIcon.cs" />
     <Compile Include="Assets\Scenes\Scripts\collision.cs" />
     <Compile Include="Assets\Scenes\Scripts\Flame1TurnOn.cs" />
+    <Compile Include="Assets\ItemPick.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_DestroyZone.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_CameraRotate.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scenes\Scripts\LJE_FruitsMove.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\LayoutSystem\PuzzlePiece.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Visuals\TargetGroupWeightControl.cs" />
+    <Compile Include="Assets\UmbrellaActive.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_PlayerDetect.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_3rdCandle.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Visuals\ScreenFader.cs" />
@@ -86,9 +88,11 @@
     <Compile Include="Assets\Scenes\Scripts\JumpCream.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\InteractivePuzzlePieces\InteractivePuzzlePiece.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\SceneSystems\SceneCompletion.cs" />
+    <Compile Include="Assets\KSOFruitsActive.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\SceneSystems\SceneReference.cs" />
     <Compile Include="Assets\Scenes\Scripts\KSOThrow.cs" />
     <Compile Include="Assets\Rain.cs" />
+    <Compile Include="Assets\Umbrella.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\InteractivePuzzlePieces\Flipper.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_RainSpawnManager.cs" />
     <Compile Include="Assets\Scenes\Scripts\KSORainManager.cs" />
@@ -102,8 +106,13 @@
     <Compile Include="Assets\Scenes\Scripts\Flame1State.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Audio\MarbleAudio.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_Spiral.cs" />
-    <Compile Include="Assets\Umbrella.cs" />
-    <Compile Include="Assets\UmbrellaActive.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -124,6 +133,7 @@
     <None Include="Assets\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Hovl Studio\Procedural fire\Demo scene\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
