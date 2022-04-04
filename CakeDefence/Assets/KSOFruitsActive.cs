@@ -17,6 +17,7 @@ public class KSOFruitsActive : MonoBehaviour
     public Text grapesText;
     public Text strawberryText;
     public Text cherryText;
+    public Animator anim;
 
     public GameObject putPosition;
     public GameObject[] fruitsFactory = new GameObject[2]; 
@@ -37,6 +38,7 @@ public class KSOFruitsActive : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            anim.SetTrigger("Picking");
             if (fruitcount1 > 0)
             {
                 GameObject fruits = Instantiate(fruitsFactory[0]);
@@ -47,6 +49,7 @@ public class KSOFruitsActive : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
+            anim.SetTrigger("Picking");
             if (fruitcount2 > 0)
             {
                 GameObject fruits = Instantiate(fruitsFactory[1]);
@@ -57,6 +60,7 @@ public class KSOFruitsActive : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
+            anim.SetTrigger("Picking");
             if (fruitcount3 > 0)
             {
                 GameObject fruits = Instantiate(fruitsFactory[2]);
