@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5DA6DA66-ABC0-74A0-A1B8-90B59AB72962}</ProjectGuid>
+    <ProjectGuid>{DD14E9C1-ADD7-F0A6-A203-4B7657350E76}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -76,6 +76,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_1stStairsMove.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_FruitsMove.cs" />
+    <Compile Include="Assets\KSOGameManager.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\LayoutSystem\PuzzlePiece.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Visuals\TargetGroupWeightControl.cs" />
@@ -113,7 +114,6 @@
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Audio\MarbleAudio.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_Spiral.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
-    <Compile Include="Assets\KSOGameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

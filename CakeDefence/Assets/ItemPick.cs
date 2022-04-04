@@ -17,7 +17,6 @@ public class ItemPick : MonoBehaviour
             if (other.gameObject.name.Contains("UmbrellaItem"))
             {
                 UmbrellaActive.instance.umbCount++;
-                print(UmbrellaActive.instance.umbCount);
             }
 
             if (other.gameObject == Fruits[0])
