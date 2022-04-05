@@ -10,7 +10,7 @@ public class KSOThrow : MonoBehaviour
 
     public float ThrowPower = 30f;
     public bool canFire = true;
-    public const float fireDelay = 1f;
+    public const float fireDelay = 1.5f;
     float fireTimer = 0;
 
 
@@ -38,6 +38,8 @@ public class KSOThrow : MonoBehaviour
 
                 Quaternion q = ThrowPosition.rotation * Quaternion.Euler(-40, 0, 0);
                 Ball.transform.rotation = q;
+
+                Destroy(Ball, 20f);
 
 
                 //Rigidbody rb = Ball.GetComponent<Rigidbody>();

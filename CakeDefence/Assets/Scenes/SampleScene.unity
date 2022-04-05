@@ -6003,10 +6003,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 402616045}
-  Fruits:
-  - {fileID: 3188434073615498947, guid: 0d13c8c2932db4645aa96311583ccbf4, type: 3}
-  - {fileID: 1921049491925593086, guid: 7ebb5c4951398304e9d9185cefeba8c9, type: 3}
-  - {fileID: 5989583521631196860, guid: 1029ed5931fb17d4886ea06f2c314993, type: 3}
 --- !u!114 &1126351872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7775,8 +7771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTime: 0
   createTime: 0
-  max: 10
-  min: 20
+  max: 20
+  min: 21
   rainEscape: {fileID: 1405888613}
   rainFactory: {fileID: 4095108142945889291, guid: b24823f1d10d4bb4ebc57cc0d873c83a,
     type: 3}

@@ -5,7 +5,6 @@ using UnityEngine;
 public class ItemPick : MonoBehaviour
 {
     public Animator anim;
-    public GameObject[] Fruits = new GameObject[2];
 
     
 
@@ -64,9 +63,7 @@ public class ItemPick : MonoBehaviour
         // Start is called before the first frame update
         void Start()
         {
-            KSOFruitsActive.instance.fruitcount1 = 0;
-            KSOFruitsActive.instance.fruitcount2 = 0;
-            KSOFruitsActive.instance.fruitcount3 = 0;
+            
             
         }
 

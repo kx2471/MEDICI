@@ -12,7 +12,7 @@ public class KSOOnParticleCollision : MonoBehaviour
     {
         part = GetComponent<ParticleSystem>();
         collisionEvents = new List<ParticleCollisionEvent>();
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, 10.0f);
     }
 
     void OnParticleCollision(GameObject other)

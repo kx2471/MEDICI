@@ -98,7 +98,7 @@
     <Compile Include="Assets\KSOFruitsActive.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\SceneSystems\SceneReference.cs" />
     <Compile Include="Assets\Scenes\Scripts\KSOThrow.cs" />
-    <Compile Include="Assets\Rain.cs" />
+    <Compile Include="Assets\ItemType.cs" />
     <Compile Include="Assets\Umbrella.cs" />
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\InteractivePuzzlePieces\Flipper.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_RainSpawnManager.cs" />
@@ -114,7 +114,6 @@
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Audio\MarbleAudio.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_Spiral.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
-    <Compile Include="Assets\ItemType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

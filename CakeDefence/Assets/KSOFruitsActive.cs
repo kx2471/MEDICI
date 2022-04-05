@@ -25,7 +25,9 @@ public class KSOFruitsActive : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        fruitcount1 = 0;
+        fruitcount2 = 0;
+        fruitcount3 = 0;
     }
 
     // Update is called once per frame

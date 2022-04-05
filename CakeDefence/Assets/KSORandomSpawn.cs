@@ -41,6 +41,7 @@ public class KSORandomSpawn : MonoBehaviour
 
             rainEscape.SetActive(true);
             StartCoroutine(SpawnObject(5.0f));
+            StartCoroutine(UmbrellaActivefalse(16.0f));
             
             RandomTime();
             print(createTime);
@@ -58,6 +59,14 @@ public class KSORandomSpawn : MonoBehaviour
         yield return new WaitForSeconds(num);
         Instantiate(rainFactory, transform.position, rainFactory.transform.rotation);
         rainEscape.SetActive(false);
+    }
+    IEnumerator UmbrellaActivefalse(float num)
+    {
+        yield return new WaitForSeconds(num);
+        if (UmbrellaActive.instance.Umbrella.activeSelf == true)
+        {
+            UmbrellaActive.instance.Umbrella.SetActive(false);
+        }
     }
     //void SpawnObject()
     //{
