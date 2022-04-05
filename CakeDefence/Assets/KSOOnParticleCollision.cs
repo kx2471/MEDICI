@@ -44,9 +44,4 @@ public class KSOOnParticleCollision : MonoBehaviour
     //        }
     //    }
 
-
-    void Update()
-    {
-       
-    }
 }

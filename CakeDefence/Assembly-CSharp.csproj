@@ -69,7 +69,7 @@
     <Compile Include="Assets\Creator Kit - Puzzle\Scripts\SceneSystems\SceneMenuIcon.cs" />
     <Compile Include="Assets\Scenes\Scripts\collision.cs" />
     <Compile Include="Assets\Scenes\Scripts\Flame1TurnOn.cs" />
-    <Compile Include="Assets\ItemPick.cs" />
+    <Compile Include="Assets\KSOItemPick.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_DestroyZone.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\Scenes\Scripts\LJE_CameraRotate.cs" />
