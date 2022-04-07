@@ -41,6 +41,7 @@ public class LJE_PlayerDetect : MonoBehaviour
         Collider[] cols = Physics.OverlapSphere(transform.position, radius, layerMask);
         if(cols.Length > 0)
         {
+            print("fireStart");
             fireStart = true;
         }
     }

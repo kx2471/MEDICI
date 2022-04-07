@@ -14,9 +14,5 @@ public class Bullet : MonoBehaviour
         rb.AddTorque(transform.right * 20, ForceMode.Impulse);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

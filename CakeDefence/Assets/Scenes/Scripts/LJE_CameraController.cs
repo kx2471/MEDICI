@@ -16,7 +16,7 @@ public class LJE_CameraController : MonoBehaviour
 
     private void Update()
     {
-        
+
         if (Input.GetMouseButton(1))
         {
             xmove += Input.GetAxis("Mouse X"); // 마우스의 좌우 이동량을 xmove 에 누적합니다.
@@ -53,6 +53,11 @@ public class LJE_CameraController : MonoBehaviour
                 player.transform.position - transform.rotation * reverseDistance,
                 ref velocity,
                 SmoothTime);
+
+            Vector3 chardir = transform.forward;
+            chardir.y = 0;
+
+            player.transform.forward = chardir;
         }
 
 

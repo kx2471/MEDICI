@@ -10,13 +10,15 @@ public class KSORandomSpawn : MonoBehaviour
     public float max = 250;
     public float min = 100;
     public GameObject rainEscape;
-    
+    public GameObject Flame1;
+    public GameObject rainManager;
+
 
     public GameObject rainFactory;
     // Start is called before the first frame update
     void Start()
     {
-        
+
         RandomTime();
         currentTime = 0;
         rainEscape.SetActive(false);
@@ -26,11 +28,15 @@ public class KSORandomSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-       
+        if (Flame1.activeSelf == true)
+        {
+            Destroy(rainManager);
+            Destroy(rainEscape);
+        }
+
         currentTime += Time.deltaTime;
 
-        
+
         if (currentTime > createTime)
         {
 
@@ -42,12 +48,12 @@ public class KSORandomSpawn : MonoBehaviour
             rainEscape.SetActive(true);
             StartCoroutine(SpawnObject(5.0f));
             StartCoroutine(UmbrellaActivefalse(16.0f));
-            
+
             RandomTime();
             print(createTime);
             currentTime = 0;
         }
-       
+
 
     }
 
@@ -59,6 +65,7 @@ public class KSORandomSpawn : MonoBehaviour
         yield return new WaitForSeconds(num);
         Instantiate(rainFactory, transform.position, rainFactory.transform.rotation);
         rainEscape.SetActive(false);
+
     }
     IEnumerator UmbrellaActivefalse(float num)
     {

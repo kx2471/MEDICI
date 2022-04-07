@@ -10,6 +10,6 @@ public class LJE_TreeRotation : MonoBehaviour
     {
 
 
-        transform.RotateAround(Target.position, Vector3.up, 20 * Time.deltaTime);
+        transform.RotateAround(Target.position, Vector3.up, 2 * Time.deltaTime);
     }
 }

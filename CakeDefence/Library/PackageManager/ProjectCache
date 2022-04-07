@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637847413383728288
-    m_Hash: 3754095796
+      ticks: 637836120480000000
+    m_Hash: 2567972810
   m_LockFileStatus:
     m_FilePath: D:/workspace/CakeDefence/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637847413384295698
-    m_Hash: 623378647
+      ticks: 637836120480000000
+    m_Hash: 831983240
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -613,6 +613,7 @@ m_PackageAssets:
         - 1.14.12
         - 1.14.13
         - 1.14.15
+        - 1.14.16
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -620,6 +621,7 @@ m_PackageAssets:
         - 1.15.12
         - 1.15.13
         - 1.15.15
+        - 1.15.16
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -634,6 +636,7 @@ m_PackageAssets:
         - 1.15.12
         - 1.15.13
         - 1.15.15
+        - 1.15.16
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -644,7 +647,7 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.15.15
+        verified: 1.15.16
       dependencies:
       - name: com.unity.services.core
         version: 1.0.1
@@ -968,12 +971,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
         revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
         path: 
-    - packageId: com.unity.postprocessing@3.2.1
+    - packageId: com.unity.postprocessing@3.0.3
       testable: 0
       isDirectDependency: 1
-      version: 3.2.1
+      version: 3.0.3
       source: 1
-      resolvedPath: D:\workspace\CakeDefence\Library\PackageCache\com.unity.postprocessing@3.2.1
+      resolvedPath: D:\workspace\CakeDefence\Library\PackageCache\com.unity.postprocessing@3.0.3
       assetPath: Packages/com.unity.postprocessing
       name: com.unity.postprocessing
       displayName: Post Processing
@@ -1053,13 +1056,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637810554450000000
+      datePublishedTicks: 637496860130000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: https://github.com/Unity-Technologies/Graphics.git
-        revision: ffa21b54c20545786dd5e691f58f41468f0c153a
+        url: git+https://github.com/Unity-Technologies/Graphics.git
+        revision: 267c9ab2b6aae8e296d78e27ca27af29b3bc7606
         path: 
     - packageId: com.unity.purchasing@2.2.2
       testable: 0

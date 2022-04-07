@@ -4,44 +4,85 @@ using UnityEngine;
 
 public class LJE_FruitsMove : MonoBehaviour
 {
+    enum State
+    {
+        
+        Hang,
+        Drop,
+        Free,
+    }
+    State state;
     Rigidbody rigid;
+
+    public AudioClip audioContact;
+    public AudioClip audioDrop;
+    AudioSource audioSource;
+
+    void Awake()
+    {
+        this.audioSource = GetComponent<AudioSource>();
+    }
+
+
+    void PlaySound(string action)
+    {
+        switch (action)
+        {
+            case "Contact":
+                audioSource.clip = audioContact;
+                break;
+            case "Drop":
+                audioSource.clip = audioDrop;
+                break;
+        }
+        audioSource.Play();
+    }
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-
-
-// Update is called once per frame
-
-    void FixedUpdate()
-    {
-     
-    }
-    
-    private void OnCollisionEnter(Collision collision)
-
-    {
-        if (collision.gameObject.name.Contains("Bullet"))
-
+        state = State.Hang;
+        rigid = GetComponent<Rigidbody>();
+        if (rigid == null)
         {
-            rigid = GetComponent<Rigidbody>();
-            rigid.useGravity = true;
-            rigid.AddForce(Vector3.down);
-
-            // rigid.velocity = Vector3.down;
-            // rigid.AddForce(Vector3.forward * 30);
-            // rigid.AddForce(Vector3.back * 30);
-
-            print("BBB");
-
-
+            rigid = gameObject.AddComponent<Rigidbody>();
         }
+        rigid.useGravity = true;
+        rigid.isKinematic = true;
+    }
 
-        //else
-        //{
-           // rigid.isKinematic = true;
-        //}
+    private void OnCollisionEnter(Collision collision)
+    {
+        switch (state)
+        {
+            case State.Hang:
+                if (collision.gameObject.name.Contains("Player") ||
+                    collision.gameObject.name.Contains("Bullet"))
+                {
+                    print("bulletcollision");
+                    transform.parent = null;
+                    rigid.isKinematic = false;
+                    state = State.Drop;
+                    PlaySound("Contact");
+                }
+                break;
+
+            
+                
+
+            case State.Drop:
+                if (collision.gameObject.CompareTag("Ground"))
+                {
+                    GetComponent<Collider>().isTrigger = true;
+                    Destroy(rigid);
+                    state = State.Free;
+                    PlaySound("Drop");
+                    
+                }
+                break;
+                
+        }
+        
     }
 }

@@ -11,6 +11,9 @@ public class KSOFruitsActive : MonoBehaviour
         instance = this;
     }
 
+    AudioSource audio;
+
+
     public int fruitcount1;
     public int fruitcount2;
     public int fruitcount3;
@@ -20,7 +23,7 @@ public class KSOFruitsActive : MonoBehaviour
     public Animator anim;
 
     public GameObject putPosition;
-    public GameObject[] fruitsFactory = new GameObject[2]; 
+    public GameObject[] fruitsFactory = new GameObject[2];
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +43,8 @@ public class KSOFruitsActive : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            audio = GetComponent<AudioSource>();
+            audio.Play();
             anim.SetTrigger("Picking");
             if (fruitcount1 > 0)
             {
@@ -51,7 +56,10 @@ public class KSOFruitsActive : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
+            audio = GetComponent<AudioSource>();
+            audio.Play();
             anim.SetTrigger("Picking");
+
             if (fruitcount2 > 0)
             {
                 GameObject fruits = Instantiate(fruitsFactory[1]);
@@ -62,6 +70,8 @@ public class KSOFruitsActive : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
+            audio = GetComponent<AudioSource>();
+            audio.Play();
             anim.SetTrigger("Picking");
             if (fruitcount3 > 0)
             {
@@ -74,5 +84,5 @@ public class KSOFruitsActive : MonoBehaviour
 
     }
 
-   
+
 }

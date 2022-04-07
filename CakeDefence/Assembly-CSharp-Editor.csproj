@@ -56,17 +56,16 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Editor\InteractivePuzzlePieceEditor.cs" />
-    <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Editor\SceneReferenceEditor.cs" />
-    <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Editor\DefaultSetup.cs" />
+    <Compile Include="Assets\EffectExamples\Creator Kit - Puzzle\Scripts\Editor\InteractivePuzzlePieceEditor.cs" />
+    <Compile Include="Assets\EffectExamples\Creator Kit - Puzzle\Scripts\Editor\SceneReferenceEditor.cs" />
+    <Compile Include="Assets\EffectExamples\Creator Kit - Puzzle\Scripts\Editor\DefaultSetup.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-    <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Editor\SceneCompletionEditor.cs" />
-    <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Editor\SceneMenuEditor.cs" />
-    <Compile Include="Assets\Creator Kit - Puzzle\Scripts\Editor\SceneReferencesBuildSetup.cs" />
+    <Compile Include="Assets\EffectExamples\Creator Kit - Puzzle\Scripts\Editor\SceneCompletionEditor.cs" />
+    <Compile Include="Assets\EffectExamples\Creator Kit - Puzzle\Scripts\Editor\SceneMenuEditor.cs" />
+    <Compile Include="Assets\EffectExamples\Creator Kit - Puzzle\Scripts\Editor\SceneReferencesBuildSetup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll" />
-    <None Include="Assets\EffectExamples\Editor\PackageManagerAssembly\PackageImportList.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -767,6 +766,18 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{DD14E9C1-ADD7-F0A6-A203-4B7657350E76}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{1C67AC02-DF18-E3D7-0E13-50010DCDCDFC}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
+      <Project>{0908F6E4-3B77-4FBC-E58C-F0EC6F365C87}</Project>
+      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{129C8D97-3C77-B32E-FF27-0DEFFE44EDE2}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

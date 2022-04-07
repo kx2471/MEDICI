@@ -24,7 +24,8 @@ public class KSOOnParticleCollision : MonoBehaviour
             if (collisionEvents[i].colliderComponent.gameObject.name.Contains("Fire"))
             {
                 Destroy(collisionEvents[i].colliderComponent.gameObject);
-                KSOGameManager.instance.GameOverUI.SetActive(true);
+                GameManager.instance.GameOverUI.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }

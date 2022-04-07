@@ -11,16 +11,16 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 1stTriggerFlame
   - Water
   - UI
-  - 
-  - 
-  - Plastic
-  - Metal
-  - Concrete
-  - Item
-  - 
+  - Fruits
+  - Minimap
+  - Player
+  - Candle
+  - Bullet
+  - Cake
+  - FlyingCandles
   - 
   - 
   - 
